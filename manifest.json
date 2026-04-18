@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFlow ADHD Adapter",
+  "version": "1.0",
+  "description": "Detects cognitive fatigue and simplifies the web UI.",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
